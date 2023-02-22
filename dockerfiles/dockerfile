@@ -1,0 +1,7 @@
+FROM apache/airflow:2.2.3
+RUN pip install --no-cache-dir -U pip setuptools wheel
+RUN pip install --no-cache-dir pandas
+RUN pip install --no-cache-dir psycopg2-binary
+RUN pip install --no-cache-dir python-dotenv
+RUN pip install --no-cache-dir requests
+RUN pip install --no-cache-dir SQLAlchemy
